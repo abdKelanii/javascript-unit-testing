@@ -14,3 +14,9 @@ export function calcAverage(numbers) {
   const sum = numbers.reduce((sum, current) => sum + current, 0);
   return sum / numbers.length;
 }
+
+export function factorial(num) {
+  if (num < 0) return undefined;
+  if (num === 0 || num === 1) return 1;
+  return num * factorial(num - 1);
+}
